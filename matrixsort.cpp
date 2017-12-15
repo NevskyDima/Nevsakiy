@@ -1,4 +1,6 @@
 //Nevsky Dmitry , 3 seminar,variant 19.
+//I had to output matrix rows in ascending order depending on the sum of their elements.
+//I had to use "rand()" for random numbers and "define" for sizes of array.
 
 #include <iostream>
 using namespace std;
