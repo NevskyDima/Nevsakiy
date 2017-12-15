@@ -18,8 +18,7 @@ int main()
 	}
 	int arr_buf[100];
 	int s_now = 0, s_prev = 0;    // sums
-
-								  // Sort cycle
+ // Sort cycle
 	for (int z = 0; z<m; z++)
 	{
 		int* ptr_arr = &arr[z][0];
