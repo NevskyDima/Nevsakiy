@@ -21,15 +21,15 @@ int main()
  // Sort cycle
 	for (int z = 0; z<m; z++)
 	{
-		int* ptr_arr = &arr[z][0];
+		int* ptr_arr = &arr[z][0]; // pointer to the first element of z-th row in the array
 		for (int i = z; i < m; i++)
 		{
-			for (int j = 0; j < n; j++)
+			for (int j = 0; j < n; j++) //calc the sum un the row
 			{
 				s_prev += *ptr_arr;
 				s_now += arr[i][j];
 			}
-			if (s_prev > s_now)
+			if (s_prev > s_now) //if the sum is bigger,change
 			{
 				for (int k = 0; k<n; k++)
 				{
@@ -40,10 +40,11 @@ int main()
 				}
 				ptr_arr -= n;
 			}
-			s_now = 0;
+			s_now = 0; //zero the sums
 			s_prev = 0;
 		}
 	}
+	//sorted array
 	cout << endl << "Sorted array: " << endl;
 	for (int i = 0; i < m; i++)
 	{
